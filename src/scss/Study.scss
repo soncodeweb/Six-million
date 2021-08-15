@@ -1,0 +1,34 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form{
+        padding: 20px;
+        width: 500px;
+        border: 1px solid rgb(196, 177, 177);
+        h1{
+            text-align: center;
+        }
+        .input-group{
+            margin-bottom: 10px;
+            input{
+                border: 1px solid rgb(136, 125, 125);
+                width: 100%;
+                padding: 8px 3px;
+            }
+            span{
+                text-align: right;
+                color: red;
+            }
+        }
+        .btn{
+            cursor: pointer;
+            border: 1px solid #333;
+            width: 100%;
+            background: coral;
+            padding: 8px;
+            border-radius: 4px
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.item { 
+    &:hover .text {
+        transform: translateY(0);
+    }
+    &:hover img {
+        transform: translateY(-50px);
+    }
+    .text {
+        // top: 100%;
+        bottom: 0;
+        transform: translateY(100%);
+        padding: 20px 0px;
+    }
+}

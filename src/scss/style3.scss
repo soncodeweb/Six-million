@@ -1,0 +1,100 @@
+// ??????
+// .title{
+//     // display: flex;
+//     // align-items: center;
+//     display: inline-block;   // khung bằng nội dung
+//     position: relative;
+//     &::after{
+//         position: absolute;
+//         left: 50%;
+//         transform: translateX(-50%);
+//         display: block; // phải có content và display: block
+//         content: '';
+//         width: 80%;
+//         height: 1px;
+//         background: black;
+//     }
+    // &::before{
+    //     content: '';
+    //     width: 100px;
+    //     height: 1px;
+    //     background: black;
+    // }
+// after , before
+// Before: nằm trước Hello
+// .title::before{
+//     content: '';
+//     width: 100px;
+//     height: 1px;
+//     background: black;
+// }
+
+// // After: nằm sau Hello
+// .title::after{
+//     content: '';
+//     width: 100px;
+//     height: 1px;
+//     background: black;
+// }
+
+// ????????
+
+
+// Làm mờ
+
+.banner{
+    background: url(../img/b2.jpg) no-repeat top center/cover ;
+    height: 100vh;
+    position: relative;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    &::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: rgba(black, 0.6);
+    }
+    .content{
+        text-align: center; // only applies for text
+        position: absolute;
+        z-index: 100;
+        h2{
+            color: white;
+        }
+    }
+}
+// Close làm mờ
+
+ul{
+    display: flex;
+    li{
+        margin-right: 20px;
+        a{
+            position: relative;
+            &:hover{
+                color: red;
+                &::after{
+                    width: 100%;
+                    // transform: scaleX(1);
+                }
+            }
+            &::after{
+                // left: 50%;
+                // transform: translateX(-50%);
+                content: "";
+                bottom: 0;
+                display: block;
+                height: 100px;
+                width: 0;
+                background: red;
+                position: absolute;
+                transition: all 10s;
+            }
+        }
+    }
+}

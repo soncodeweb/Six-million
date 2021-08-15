@@ -1,0 +1,10 @@
+.item { 
+    &:hover .text {
+        opacity: 1;
+    }
+    .text {
+        top: 0;
+        height: 100%;
+        opacity: 0;
+    }
+}

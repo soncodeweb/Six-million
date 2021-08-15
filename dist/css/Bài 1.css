@@ -1,0 +1,27 @@
+div {
+	width: 500px;
+	margin: 20px;
+	border: 1px solid #a39c9c;
+}
+
+img {
+	width: 100%;
+}
+
+h2 {
+	padding: 10px;
+}
+
+p {
+	padding: 10px;
+}
+
+.element1 {
+	color: wheat;
+	background-color: gray;
+}
+
+.content3 .element1 {
+	margin-top: 20px;
+}
+

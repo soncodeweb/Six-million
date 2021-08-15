@@ -1,0 +1,115 @@
+// .content{
+//     height: 2000px;
+//     // background-image: url(../img/b2.jpg);
+//     background-repeat: no-repeat;
+//     // background-size: cover;
+//     background-position: right center;
+//     background: url(https://picsum.photos/200/300);
+// }
+// // Làm backgounrd cho div 
+// // background-repeat: no-repeat     k cho nó lặp hình lại
+// // background-size: cover          bao phủ hết width và height
+// // background-position-x: 20px      lệch sang phải 20px
+// // background-position-y: 20px      lệch xuống 20px
+// // .container{
+// //     // dont viết nữa
+// //     max-width: 1200px;
+// //     margin: 0px auto;
+// // }
+// // //container :   giới hạn 
+
+// // .flex{
+// //     display: flex;
+// //     justify-content: space-between;
+// // }
+// // body{
+// //     display: flex;
+// //     justify-content: center;
+// //     align-items: center;
+// //     height: 100vh;
+// // }
+// // a{
+// //     font-size: 26px;// mặc định 10px
+// //     margin-top: 30px;
+// //     margin-left: 20px;
+// //     padding: 20px;
+// //     color: white;
+// //     background: black;
+// //     border-radius: 50px;
+// //     display: inline-block;
+// //     // note
+// //     transition: transform 0.5s, background 2s, color 2s; // Wed thường để 0.3-0.5 s // Hoặc all là tất cả các thuộc tính
+// //     &:hover{
+// //         transform: scale(0.5); // đơn vị % scale(1) <==> 100%   // 1.1= 110% Phóng to thu nhỏ scale
+// //         background-color: goldenrod;
+// //         color: red;
+// //     }
+// // }
+
+// span{
+//     margin-top: 10px;
+//     display: inline-block;
+//     padding: 10px;
+//     border-radius: 100%;
+//     background: gray;
+//     color: white;
+// }
+
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+header{
+    padding: 20px 0px;
+    box-shadow: 0px 2px 3px -1px #333;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // h2{
+        //     a{
+
+        //     }
+        // }
+        nav{
+            > ul{
+                display: flex;
+                > li{
+                    margin-left: 20px;
+                    &:hover{
+                        ul.dropdown{
+                            display: block;
+                        }
+                    }
+                    > a{
+                        transition: all 0.3s;
+                        &:hover{
+                            color: yellow;
+                        }
+                    }
+                    ul.dropdown{
+                        display: none; // ẩn nó đi
+                        position: absolute;
+                        box-shadow: 0px 0px 4px -1px;
+                        width: 100px;
+                        background-color: white;
+                        transform:translateX(-0px);
+                        // bottom: 0px;
+                        li{
+                            &:hover{
+                                background-color: #333;
+                                a{
+                                    color: white;
+                                }
+                            }
+                            a{
+                                padding: 8px;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

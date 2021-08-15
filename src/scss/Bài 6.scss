@@ -1,0 +1,192 @@
+.container{
+    width: 1200px;
+    margin: 0px auto;
+}
+
+header{
+    background-color: black;
+    .container{
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // .logo{
+
+        // }
+        nav{
+            ul{
+                display: flex;
+                li{
+                    margin-left: 23px;
+                    font-size: 20px;
+                    color:#d9dadc;
+                    a{
+                        color: white;
+                        font-weight: 500;
+                        &:hover{
+                            color: #1ed760;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.content{
+    height: 700px;
+    background-image: url("https://www-growth.scdn.co/static/home/bursts.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 175%;
+    background-position: 46% 4%;
+    background-color:   #2941ab;
+    .container{
+        height: 700px;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        text-align: center; 
+        .content_element1{
+            .object{
+                font-family: system-ui;
+                font-weight: 900;
+                font-size: 140px;
+                color: #1ed760;
+            }
+            .infor{
+                display: inline-block;
+                padding: 30px;
+                font-size: 20px;
+                color: #1ed760;
+            }
+            a{
+                display: inline-block;
+                padding: 15px 20px;
+                background-color: #1ed760;
+                border-radius: 40px;
+                color: #2941AB;
+                font-weight: bold;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+footer{
+    background: black;
+    .container{
+        padding: 80px 0px;
+        .footer_element1And2{
+            display: flex;
+            justify-content: space-between;
+            .footer_element1{
+                display: flex;
+                .element1_logo{
+                    a{
+                        img{
+                            
+                        }
+                    }
+                }
+                .element1_nav{
+                    display: flex;
+                    margin-top: 30px;
+                    .list{
+                        margin-left: 50px;
+                        ul{
+                            li{
+                                font-family: Arial, Helvetica, sans-serif;
+                                color: #919496;
+                                font-size: 13px;
+                                font-weight: 600;
+                                margin-bottom: 30px;
+                                a{
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    color: #fff;
+                                    &:hover{
+                                        color: rgb(16, 167, 16);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .footer_element2{
+                display: flex;
+                justify-content: space-between;
+                .cirle{
+                    a{
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        background-color: #222326;
+                        margin-left: 13px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        font-size: 20px;
+                        &:hover{
+                            color:  rgb(16, 167, 16);
+                        }
+                }
+                }
+            }
+
+        }
+.VietNam{
+    text-align: right;
+    margin: 100px 0px 5px;
+    a{
+        color: gray;
+        font-size: 13px;
+    }
+    .iconVN{
+        font-size: 16px;
+        color: gray;
+        &:hover{
+            color:rgb(16, 167, 16);
+        }
+    }
+}
+        .footer_element3And4{
+            // margin-top: 90px;
+            .footer_element3{
+                display: flex;
+                justify-content: space-between;
+                .element3_1{
+                    display: flex;
+                        li{
+                            font-size: 14px;
+                            margin-left: 15px;
+                            color: gray;
+                            a{
+                                &:hover{
+                                    color:rgb(16, 167, 16);
+                                }
+                                color: gray;
+                            }
+                        }
+                    }
+                }
+                .element3_2{
+                    li{
+                        text-align: right;
+                        color: gray;
+                        margin-bottom: 5px;
+                        i{
+                            color: gray;
+                            font-size: 12px;
+                        }
+
+                        
+                    }
+                }
+            }
+        }
+    }

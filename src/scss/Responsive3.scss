@@ -1,0 +1,27 @@
+@import "grid";
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+
+    @include lg(){
+        padding: 0px 2%;
+    }
+}
+
+img{
+    width: 100%;
+}
+.product{
+    .container{
+        .item{
+            border: 1px solid #333;
+            padding: 10px;
+            p{
+                @include xs(){
+                    color: red;
+                }
+            }
+        }
+    }
+}

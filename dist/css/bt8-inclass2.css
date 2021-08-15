@@ -1,0 +1,10 @@
+.item:hover .text {
+	transform: translateY(0);
+}
+
+.item .text {
+	bottom: 0;
+	padding: 10px 0;
+	transform: translateY(100%);
+}
+

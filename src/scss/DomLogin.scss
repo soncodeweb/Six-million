@@ -1,0 +1,27 @@
+.login{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    form{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        .input-group{
+            input::-webkit-input-placeholder{
+                display: block;
+                text-align: center;
+                color: red;
+                width: 100%;
+            }
+            border: 1px solid #333;
+            border-radius: 3px;
+            margin-bottom: 20px;
+            font-size: 30px;
+            &:last-child{
+                margin-top: -20px;
+            }
+        }
+    }
+}

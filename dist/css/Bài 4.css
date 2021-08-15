@@ -1,0 +1,134 @@
+.title {
+	margin-top: 50px;
+}
+
+.layout {
+	display: flex;
+	width: 96%;
+	margin-top: 20px;
+	padding: 20px;
+	background-color: #e4e5e6;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.layout .layout1 {
+	width: 32%;
+	border: .5px solid #fff;
+	border-radius: 4px;
+	background-color: #fff;
+}
+
+.layout .layout1 .subject {
+	line-height: 35px;
+	height: 35px;
+}
+
+.layout .layout1 .subject span {
+	font-size: 13px;
+	font-weight: 600;
+	margin-left: 15px;
+	color: #f8fcf9;
+	border: 1px solid #4dbd74;
+	border-radius: 8px;
+	background-color: #4dbd74;
+}
+
+.layout img {
+	width: 100%;
+	height: 288px;
+}
+
+.layout .information {
+	padding: 10px;
+}
+
+.layout .information h1 a {
+	color: #22a8d8;
+}
+
+.layout .information .time {
+	font-size: 15px;
+	font-style: italic;
+	color: #85878a;
+}
+
+.layout .information p {
+	font-size: 14px;
+	margin-top: 8px;
+	color: #85878a;
+}
+
+.layout2 {
+	display: flex;
+	width: 1190px;
+	margin-left: 8px;
+	padding: 15px 32px 15px 32px;
+	background: #f5f5f5;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.layout2 .layout2_element {
+	width: 192px;
+	border: 1px solid white;
+	background-color: white;
+}
+
+.layout2 .layout2_element a img {
+	width: 100%;
+	height: 187px;
+}
+
+.layout2 .layout2_element .information {
+	padding: 7px 5px 5px;
+}
+
+.layout2 .layout2_element .information h2 a {
+	font-size: 15px;
+	color: #9c9b9b;
+}
+
+.layout2 .layout2_element .information .price_sale {
+	font-size: 18px;
+	color: #f58240;
+}
+
+.layout2 .layout2_element .information .cost {
+	font-size: 15px;
+	color: #c9cdcf;
+}
+
+.layout2 .layout2_element .information .cost del {
+	color: #b6b6b6;
+}
+
+.layout2 .layout2_element .information .rate {
+	display: flex;
+	justify-content: space-between;
+}
+
+.layout2 .layout2_element .information .rate .rate_element1 {
+	display: flex;
+	justify-content: left;
+}
+
+.layout2 .layout2_element .information .rate .rate_element1 ul {
+	display: flex;
+}
+
+.layout2 .layout2_element .information .rate .rate_element1 ul li i {
+	font-size: 12px;
+	color: yellow;
+}
+
+.layout2 .layout2_element .information .rate .rate_element1 .amount {
+	font-size: 13px;
+	color: #c7c5d0;
+}
+
+.layout2 .layout2_element .information .rate .rate_element2 .address {
+	font-size: 13px;
+	color: #c7c5d0;
+}
+

@@ -1,0 +1,50 @@
+.square_big{
+    position: relative;
+    margin-top: 200px;
+    width: 500px;
+    height: 500px;
+    background-color: blueviolet;
+    .square1{
+        right: 0;
+        top: 0;
+        transform: translateY(-100%);
+        background-color: orange;
+    }
+    .square2{
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        background-color: blue;
+    }
+    .square3{     
+        left: 75%;
+        top: 50%;
+        transform: translateY(-50%) translateX(-75%);
+        background-color: green;
+    }
+    .circle{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .circle1{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: yellow;
+        }
+    }
+}
+
+.square{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}

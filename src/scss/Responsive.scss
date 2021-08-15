@@ -1,0 +1,115 @@
+/*                            // Open css
+ Những màn hind có kích thước <= 400px
+@media (max-width: 400px){
+    h1{
+        color: red;
+    }
+}
+Những màn hình có kích thước >= 400px
+@media (min-width: 400px){
+    h1{
+        color: red;
+    }
+}
+                            // Close css
+                            // Open  scss
+h1{
+    @media (min-width: 400px){
+        h1{
+            color: red;
+        }
+    }  
+}
+                            // Close  scss */
+
+
+@import "flex";  // import file flex trong scss
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    @media(max-width: 1100px)
+    {
+        padding: 0px 10px;
+    }
+}
+
+header{
+    padding: 20px 0px;
+    background-color: #333;
+    .container{
+        input{
+            display: none;
+        }
+        input:checked ~ nav /*~ gọi thằng cùng cấp*/{
+            right: 0;
+        }
+        a, li{
+            color: white;
+            font-size: 18px; // 16px là mặc định
+        }
+        .logo{}
+        nav{
+            label.close{
+                color: white;
+                display: none;
+                @media(max-width: 992px){
+                    display: inline-block;
+                    position: absolute;
+                    top: 10px;
+                    right: 20px;
+                }
+
+            }
+            @media(max-width: 992px)
+            {
+                // display: none;
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100vh;
+                background-color: #333;
+                padding-top: 40px;
+                width: 200px;
+                transition: all 0.4s;
+            }
+            ul{ 
+                @media(max-width: 992px)
+                {
+                    flex-direction: column;
+                } 
+                li{
+                    @media(max-width: 992px){
+                        margin-left: 0;
+                        margin-bottom: 20px;
+                    }
+                    margin-left: 10px;
+                    &.line{
+                        @media(max-width: 992px){
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .bar{
+            @media(max-width: 992px)
+            {
+                display: flex;
+            }
+            display: none;
+            width: 30px;
+            cursor: pointer;
+            span{
+                width: 100%;
+                background-color: white;
+                height: 3px;
+                border-radius: 3px;
+                margin-bottom: 3px;
+                &:last-child{
+                    margin-bottom: 0;  // Cái span cuối có margin-bottom: 3px ; giờ cái này để loại bỏ thành 0px
+                }
+            }
+        }
+    }
+}
+

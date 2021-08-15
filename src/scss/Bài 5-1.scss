@@ -1,0 +1,92 @@
+
+// // Hình 1
+// .red{
+//     width: 300px;
+//     height: 300px;
+//     position: relative;
+//     background-color: red;
+//     .green{
+//         position: relative;
+//         width: 100px;
+//         height: 100px;
+//         background-color: green;
+//         .yellow{
+//             position: absolute;
+//             left: 0;
+//             top:0;
+//             width: 10px;
+//             height: 10px;
+//             background-color: yellow;
+//         }
+
+//     }
+// }
+// .black{
+//     bottom: 0;
+//     right: 0;
+//     width: 20px;
+//     height: 20px;
+//     position: absolute;
+//     background-color: black;
+// }
+
+// Kết thúc hình 1
+// Hình 2
+.pink{
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: rgb(211, 149, 159);
+    left: 0;
+    border: 1px solid  rgb(211, 138, 150);
+    .white1{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+   
+    .purple1{
+        position: absolute;
+        bottom: 0;
+        .white2{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+    .purple2{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        .white3{
+            position: absolute;
+            right: 0;
+        }
+    }
+  
+    .light_blue{
+        position:absolute;
+        background-color: lightblue;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        border: 1px solid rgb(155, 208, 226);
+    }
+    
+
+}
+.purple{
+    width: 75px;
+    height: 75px;
+    background-color: rgb(138, 17, 138);
+    border: 1px solid  rgb(100, 15, 100);
+}
+.white{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 1px solid black;
+}
+// Kết thúc hình 2

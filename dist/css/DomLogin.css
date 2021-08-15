@@ -1,0 +1,32 @@
+.login {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.login form {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+}
+
+.login form .input-group {
+	font-size: 30px;
+	margin-bottom: 20px;
+	border: 1px solid #333;
+	border-radius: 3px;
+}
+
+.login form .input-group input::-webkit-input-placeholder {
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: red;
+}
+
+.login form .input-group:last-child {
+	margin-top: -20px;
+}
+

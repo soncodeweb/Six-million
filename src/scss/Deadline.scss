@@ -1,0 +1,91 @@
+$color-font: #666;
+$main-color: #40a944;
+$border-color: #e7e7e7;
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+body {
+    font-family: Work Sans,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+header{
+    border-bottom: 1px solid $border-color;
+    .container{
+        .header-one{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .one.left{
+                nav{
+                    > ul{
+                        display: flex;
+                        > li{
+                            padding: 10px 0px;
+                            position: relative;
+                            margin-right: 18px;
+                            &:nth-child(2){
+                                color: $border-color;
+                                font-size: 14px;
+                            }
+                            i{
+                                font-size: 13px;
+                                color: #555;
+                                margin-left: 3px;
+                            }
+                            
+                            // &:hover {
+                            //         ul.dropdown{
+                            //         display: block;
+                            //         transform: translateY(100%);
+                            //         opacity: 1;
+                            //     }
+                            // }
+                            > ul.dropdown{
+                                // opacity: 0;
+                                display: none;
+                                transition: all 0.5s;
+                                position: absolute;
+                                border: 1px solid $border-color;
+                                width: 200px;
+                                bottom: 0;
+                                transform: translateY(100%);
+                                padding: 10px;
+                                >li{
+                                    padding: 10px 0px;
+                                }
+                                >li.crossbar{
+                                    // padding: 10px 0px;
+                                        width: 160px;
+                                        height: 1px;
+                                        border-bottom:1px solid $border-color ;
+                                }
+        
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .one.right{
+                nav{
+                    ul{
+                        display: flex;
+                        li{
+                            margin-left: 20px;
+                            a{
+                                i{
+                                    font-size: 15px;
+                                    color: #555;
+                                    &:hover{
+                                        color: $main-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

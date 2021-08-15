@@ -1,0 +1,171 @@
+// Begin Content1//
+.content1{
+    padding: 15px;
+    width: 660px;
+    background-color: gray;
+    align-items: flex-start;
+    .content1_element1{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgb(172, 172, 159);
+        h2{
+            color: yellow;
+            margin-bottom: 5px;
+        }
+        a{
+            display: flex;
+            color: white;
+            .triangle{
+                width:0px;
+                height:0px;
+                border-bottom:7px solid transparent;
+                border-top:7px solid transparent;
+                border-left:7px solid #eeecec;
+                margin-top: 5px;
+                margin-left: 10px;
+            }
+        }
+    }
+    .content1_element2{
+        margin-top: 5px;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                border: 1px solid black;
+                .film1{
+                    position: relative;
+                    width: 160px;
+                    background: rgb(36, 33, 33);
+                    align-items: flex-start;
+                    a{
+                        img{
+                            width: 100%;
+                            height: 200px;
+                        }
+                    }
+                    .shape{
+                        position: absolute;
+                        top: 5px;
+                        left: 0;
+                        .rectangle_with_nose{
+                            display: flex;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            align-items: center;
+                            .rectangle{
+                                width: 140px;
+                                height: 20px;
+                                background: red;
+                            }
+                            .triangle2{
+                                width:0px;
+                                height:0px;
+                                border-bottom:10px solid transparent;
+                                border-top:10px solid transparent;
+                                border-left:10px solid red;    
+                            }
+                            h2{
+                                position: absolute;
+                                font-size: 12px;
+                                color: white;
+                                margin-left: 3px;
+                            }
+                        }
+        
+                    }
+                    .infor{
+                        padding: 5px;
+                        a{
+                            
+                            .nameFilm{
+                                color: rgb(123, 205, 243);
+                                font-size: 13px;
+                                margin-bottom: 8px;
+                            }
+                        }
+                        .inforFilm{
+                            color: white;
+                            font-size: 12px;
+                            margin-bottom: 8px;
+                        }
+                        .timeFilm{
+                            font-size: 13px;
+                            color: rgba(194, 188, 188, 0.849);
+                
+                        }
+                    }
+                }
+            }
+        }
+        .linetwo{
+            margin-top: 10px;
+        }
+    }
+}
+
+// Close content 1
+
+// Begin Content 2
+    .content2{
+        margin-bottom: 50px;
+        width: 660px;
+        margin: 20px 0px 0px 20px;
+        .title{
+            width: 660px;
+            height: 10px;
+            position: relative;
+            background-color: rgb(103, 161, 216);
+            h2{
+                position: absolute;
+                top: -20px;
+                left: 0;
+                font-size: 30px;
+                color: rgb(51, 51, 51);
+                font-style: italic;
+            }
+        }
+        .content2_element1{
+            margin-top: 20px;
+            align-items: flex-start;
+            display: flex;
+            justify-content: space-between;
+            ul{
+                li{
+                    margin-bottom: 10px;
+                    .element1{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 320px;
+                        padding-bottom: 10px;
+                        border-bottom: 1px solid rgb(160, 155, 155);
+                        a{  
+                            img{
+                                width: 100px;
+                                height: 75px;
+                            }
+                        }
+                        .infor{
+                            padding: 5px 0px 0px 10px;
+                            a{
+                                p{
+                                
+                                    color: black;
+                                }
+                            }
+                            span{
+                                margin-top: 5px;
+                                font-weight: bold;
+                                color: rgb(28, 34, 90);
+                            }
+                        }
+                    }
+                }
+            }
+            // .rowTwo{
+              
+            // }
+        }
+    }
+// Close content2

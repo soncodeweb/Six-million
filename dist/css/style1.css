@@ -1,0 +1,43 @@
+body {
+	display: flex;
+	height: 100vh;
+	background-color: #f4f4f4;
+	justify-content: center;
+	align-items: center;
+}
+
+form .search {
+	display: flex;
+}
+
+form .search .icon {
+	display: flex;
+	padding: 0 10px;
+	background: #f4f4f4;
+	justify-content: center;
+	align-items: center;
+}
+
+form .search .icon i {
+	font-size: 12px;
+	cursor: pointer;
+	color: red;
+}
+
+form .search input {
+	width: 300px;
+	padding: 8px 10px 8px 0;
+	background: #f4f4f4;
+}
+
+form .search input:focus {
+	color: red;
+	border: 1px solid red;
+}
+
+form .search input::-webkit-input-placeholder {
+	font-size: 12px;
+	font-style: italic;
+	color: red;
+}
+

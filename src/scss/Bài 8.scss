@@ -1,0 +1,105 @@
+body{
+    background-color: #2980b9;
+    font-family: "Lato";
+}
+
+.content{
+    margin-left: 135px;
+    width: 700px;
+    color: #ecf0f1;
+    .content_element1{
+        margin-bottom: 80px;
+        h1{
+            font-size: 64px;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+        h2{
+            font-size: 26px;
+        }
+    }
+    .content_element2{
+        margin-bottom: 50px;
+        line-height: 28px;
+    }
+    .content_element3{
+        font-size: 12px;
+        p{
+
+        }
+        a{
+            color: #ecf0f1;
+            text-decoration: underline;
+        }
+        
+    }
+}
+.content_element4{
+    margin: 55px 0px 45px 0px;
+    ul{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        li{
+        border: 1px solid #ecf0f1;
+        padding: 10px;
+        margin-left: 10px;
+            a{
+                color: #ecf0f1;
+                &:hover{
+                    color: #2c3e50;
+                }
+            }
+        }
+    }
+}
+
+.content_element5{
+    width: 1200px;
+    padding: 20px 30px;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            // float: left;
+            position: relative;
+            display: flex;
+            cursor: pointer;
+            Overflow: hidden;
+            &:hover{
+                .effect1{
+                    display: block;
+                }
+            }
+            .effect1{
+                display: none;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                &::before{
+                    display: block;
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(black,0.6);
+
+                }
+                .infor{
+                    z-index: 10;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 100px;
+                    left: 0;
+                    align-items: center;
+                    text-align: center;
+                    font-family: "Lato";
+                    color: #fff;
+                    h2{
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
